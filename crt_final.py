@@ -98,4 +98,4 @@ for i in range (n):
 
 f = f % M
 
-print("\n Nilai x adalah \n  {} modulo {}.".format(f, M))
+print("\nNilai x adalah {} modulo {}.".format(f, M))
