@@ -1,3 +1,5 @@
+import time
+
 def GenerateTitle():
     print("==============================================")
     print("        LINEAR CONGRUENCE SYSTEM SOLVER   ")
@@ -75,9 +77,7 @@ for i in range (n):
     a[i] = int(input("Masukkan a" + str(i + 1) + ": "))
     m[i] = int(input("Masukkan residue m" + str(i + 1) + ": "))
 
-
-# Kode ini untuk menghitung hasil kali dari setiap modulo, dan memasukkannya ke variabel M.
-# Ini merupakan langkah kunci dari Chinese Remainder Theorem.
+start_time = time.time()
 for i in range (n):
     M = M*m[i]
 
@@ -93,9 +93,12 @@ for i in range (n):
 # Persamaan tersebut dapat diselesaikan dengan mudah dengan menggunakan inverse modulo.
 # Setelah iterasi terakhir, akan diperoleh 
 f = 0
+
 for i in range (n):    
     f += invmod(c[i],m[i]) * a[i] * D[i]
 
 f = f % M
 
 print("\nNilai x adalah {} modulo {}.".format(f, M))
+
+print("\nTime Elapsed : {}".format(time.time()-start_time))
