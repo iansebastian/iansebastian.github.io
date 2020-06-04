@@ -44,31 +44,14 @@ class Solution:
                 current = current.next
         return head
 
-    # def deleteOneDup(self, head, key):
-    #     current = head
-    #     while current:
-    #         if current.data == key:
-    #             cut = current
-    #             while cut:
-    #                 if cut.data == key:
-    #                     cut = cut.next
-    #                 else:
-    #                     break
-    #             current.next = cut
-    #         if current:
-    #             current = current.next
-    #     return head
-
     def removeDuplicates(self,head):
-        #Write your code here
         current = head
         while current:
             current.next = self.delete(current.next, current.data)
-            resu = current
-            self.display(current); print("Data erased :",current.data)
+            # self.display(current); print("Data erased :",current.data)
             if current:
                 current = current.next
-                print("Done 1 iter")
+                # print("Done 1 iter")
         return head
 
 
@@ -80,5 +63,5 @@ for i in range(T):
     head=mylist.insert(head,data)
 print("Input end")
 head = mylist.removeDuplicates(head)
-# head = mylist.delete(head, int(input("Member to erase: ")))
+head = mylist.delete(head, int(input("Member to erase: ")))
 mylist.display(head)
