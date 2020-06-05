@@ -1,5 +1,7 @@
 #!/bin/python3
 
+# 16 hour thinking job
+
 import math
 import os
 import random
