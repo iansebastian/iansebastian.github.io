@@ -1,6 +1,6 @@
 def GenerateTitle():
     print("==============================================")
-    print("        LINEAR CONGRUENCE SYSTEM SOLVER   ")
+    print("        LINEAR CONGRUENCE SYSTEM SOLVER       ")
     print("an implementation of Chinese Remainder Theorem")
     print("==============================================")
 
