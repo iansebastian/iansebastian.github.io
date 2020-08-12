@@ -33,5 +33,11 @@ def decimal_sqrt(p, depth=0):
 
         res = 10*res + s
         p -= (r+s)*s * 100**i
-        print(pos, p, res, r, s)
     return res / 10**depth
+
+def babylonian_sqrt(S, depth = 10):
+    x = S/2
+
+    while ((S - x**2) > 10**-depth or (S - x**2) < -10**-depth):
+        x = (x + S/x) / 2
+    return x
