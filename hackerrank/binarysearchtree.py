@@ -45,7 +45,7 @@ class BST:
         if root == None:
             return -1
         else:
-            return max( getHeightHR(root.left), getHeightHR(root.right) )+1
+            return max(getHeightHR(root.left), getHeightHR(root.right))+1
 T = int( input() )
 myTree = BST()
 root = None
