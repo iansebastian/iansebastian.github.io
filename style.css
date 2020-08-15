@@ -1,0 +1,68 @@
+
+
+
+.flex-container {
+    position: relative;
+
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: col;
+}
+
+.box {
+    width: 20%;
+}
+
+.sub-box {
+
+    position: relative;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+
+
+body {
+    background-color: black;
+
+    text-indent: 0px;
+    margin-left: 30px;
+
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', 'Roboto', 'Helvetica Neue', Helvetica ,sans-serif;
+}
+
+h1 {
+    color: white;
+
+    margin-top: 40px;
+    margin-left: 0px;
+
+    font-size: 48px;
+    font-weight: 50;
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', Helvetica, sans-serif
+}
+
+a {
+    color: #CCC;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+p {
+    line-height: normal;
+}   
+
+li {
+    margin: 5px;
+}
